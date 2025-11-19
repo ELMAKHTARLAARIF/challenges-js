@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: red;
+}
+.container div{
+    width: 20%;
+    height: 100px;
+    background-color: aqua;
+
+}
+.addclass{
+    border: 1px rgb(214, 21, 21) solid;
+    color: red;
+     width: 50%;
+    padding: 10px;
+
+}.worker{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    color: black;
+}
+.addclass2{
+    transition: .7s all ease;
+    background-color: rgb(13, 134, 247);
+    width: 200px;
+    height: 200px;
+
+}table{
+    width: 50%;
+    border: 1px solid black;
+}
+tr{
+width: 100%;
+    border: 1px solid black;
+}
+td{
+
+    border: 1px solid black;
+}#submit{
+    width: 30px;
+    height: 30px;
+}
