@@ -1,24 +1,24 @@
 const workers = [
   { id: 1, name: 'Alice Dupont', role: 'Manager', city: 'Paris', salary: 60000, active: true, hireDate: '2023-01-15' },
-  { id: 2, name: 'Bob Martin', role: 'Developer', city: 'Lyon', salary: 55000, active: true, hireDate: '2022-06-10' },
-  { id: 3, name: 'Claire Bernard', role: 'Designer', city: 'Paris', salary: 48000, active: false, hireDate: '2024-02-01' },
   { id: 4, name: 'David Leroy', role: 'Developer', city: 'Lyon', salary: 52000, active: true, hireDate: '2021-08-20' },
   { id: 5, name: 'Eve Dubois', role: 'Manager', city: 'Marseille', salary: 62000, active: true, hireDate: '2020-03-05' },
-  
+  { id: 2, name: 'Bob Martin', role: 'Developer', city: 'Lyon', salary: 55000, active: true, hireDate: '2022-06-10' },
+  { id: 3, name: 'Claire Bernard', role: 'Designer', city: 'Paris', salary: 48000, active: false, hireDate: '2024-02-01' },
+
 ]
-// //chalenge 1 =======================================================================================================
+// //challenge 1 =======================================================================================================
 // const worker = workers.length;
 const body = document.querySelector("body");
 // body.innerHTML=`<p> number of workers is ${worker}</p>`;
-// // chalenge 2 =======================================================================================================
+// // challenge 2 =======================================================================================================
 // const ul = document.createElement("ul");
 // body.appendChild(ul);
 // for (work of workers){
 // ul.innerHTML=`<li>${work.name}`;
 // }
-// //chalenge 3 =======================================================================================================
+// //challenge 3 =======================================================================================================
 // body.innerHTML+=`<p>Name:${workers[2].name } | Role ${workers[2].role}</p>`
-// //chalenge 4 =======================================================================================================
+// //challenge 4 =======================================================================================================
 // workers.forEach(work=>{
 //     if(work.active== true)
 //     {
@@ -28,7 +28,7 @@ const body = document.querySelector("body");
 //         body.innerHTML+=`<p >${work.name}:<span style="color:red">inactive </span></p>`
 //     }
 // })
-// //chalenge 5 =======================================================================================================
+// //challenge 5 =======================================================================================================
 // for(let i = 0;i<workers.length;i++)
 // {
 //     body.innerHTML+=`<button>${workers[i].name}</button>`
@@ -39,7 +39,7 @@ const body = document.querySelector("body");
 //         alert(`${workers[index].role}`)
 //     })
 // })
-//chalenge 6 =======================================================================================================
+//challenge 6 =======================================================================================================
 // const input = document.createElement("input");
 // body.appendChild(input);
 // const para = document.createElement("p");
@@ -47,7 +47,7 @@ const body = document.querySelector("body");
 // input.addEventListener("input", (e)=>{
 //     para.textContent=`${input.value}`
 // })
-// chalenge 7 =======================================================================================================
+// challenge 7 =======================================================================================================
 // const divs =  document.querySelectorAll(".worker");
 // divs.forEach((div ,index)=>{
 //     div.textContent=`${workers[index].name}`
@@ -55,9 +55,9 @@ const body = document.querySelector("body");
 //         divs.forEach(ele=>ele.className = "worker");
 //         div.className = "addclass";
 //     })
-    
+
 // })
-// chalenge 8 =======================================================================================================
+// challenge 8 =======================================================================================================
 // const button = document.createElement("button");
 // body.appendChild(button);
 // const div = document.createElement("div")
@@ -72,13 +72,13 @@ const body = document.querySelector("body");
 // button.addEventListener("click", ()=>{
 // div.classList.toggle("addclass2");
 // })
-//chalenge 9 =======================================================================================================
+//challenge 9 =======================================================================================================
 // const arr = workers.filter(worker=>worker.city =="Paris")
 // console.log(arr)
 // arr.forEach((ar,index)=>{
 //     body.innerHTML+=`<p>${ar.name}</p>`
 // })
-// chalenge 10 =======================================================================================================
+// challenge 10 =======================================================================================================
 // const para = document.createElement("p");
 // body.appendChild(para);
 // const button = document.createElement("button");
@@ -91,7 +91,7 @@ const body = document.querySelector("body");
 //         para.textContent="✓ Personnel List Updated!"
 //     }, 2000);
 // })
-//chalenge 11 =======================================================================================================
+//challenge 11 =======================================================================================================
 // const arrWithNameSalary = workers.map((worker)=>{
 //     let objet = {...{name:worker.name,salary:worker.salary}};
 //     return objet;const keys = Object.keys(workers[0])
@@ -100,18 +100,17 @@ const body = document.querySelector("body");
 // arrWithNameSalary.forEach((woker,index)=>{
 //     body.innerHTML+=`<p>${woker.name} => ${woker.salary}</p>`
 // })
-//chalenge 12 =======================================================================================================
+//challenge 12 =======================================================================================================
 // let newArray = workers.filter(worker=>worker.salary>50000)
 // console.log(newArray)
 // newArray.forEach(element => {
 //     body.innerHTML+=`<p>${element.name}=>${element.salary}</p>`
 // });
 
-//chalenge 13 =======================================================================================================
+//challenge 13 =======================================================================================================
 // workers.forEach(Element=>{
 //     body.innerHTML+=`<div style ="color:red" class="div" >${Element.name}</div>`
-// })const keys = Object.keys(workers[0])
-// console.log(keys);
+// })
 // const divs = document.querySelectorAll(".div")
 // divs.forEach((div,index)=>{
 //     div.addEventListener("click", (e)=>{
@@ -119,10 +118,10 @@ const body = document.querySelector("body");
 //     alert(`${workers[index].name} is at index ${indexof}`)
 //     })
 // })
-// chalenge 14 =======================================================================================================
+// challenge 14 =======================================================================================================
 // const sumSalary = workers.reduce((sum, worker) => sum + worker.salary,0);
 // console.log(sumSalary);
-//chalenge 15 =======================================================================================================
+//challenge 15 =======================================================================================================
 // const button = document.createElement("button");
 // body.appendChild(button);
 // button.textContent=`click`;
@@ -130,7 +129,7 @@ const body = document.querySelector("body");
 //     const sorting = workers.sort((a,b)=>a.name.localeCompare(b.name))
 // sorting.forEach((sort,index)=>body.innerHTML+=`</p>${sort.name}</p>`)
 // })
-// chalenge 16 =======================================================================================================
+// challenge 16 =======================================================================================================
 // const keys = Object.keys(workers[0])
 // console.log(keys);
 //another method to get all the workers;
@@ -139,7 +138,7 @@ const body = document.querySelector("body");
 //  console.log(key)
 // })
 
-//chalenge 17 =======================================================================================================
+//challenge 17 =======================================================================================================
 
 // const container = document.getElementById("table-container");
 
@@ -161,7 +160,7 @@ const body = document.querySelector("body");
 //   });
 
 // });
-//chalenge 18 =======================================================================================================
+//challenge 18 =======================================================================================================
 
 // const form = document.getElementById("worker-inputs");
 // const [inputId,inputNmae,inputRole,inputCity,inputSalary,inputAction,inputDate]=form.children;
@@ -183,34 +182,35 @@ const body = document.querySelector("body");
 // console.log(increaseSalary)
 
 // })
-//chalenge  19 =======================================================================================================
-// workers.forEach((worker,index)=>{
-//   body.innerHTML+=`
-//   <div class="d" value="${index}">${worker.name}
-//   <button class="delete">Delete</button>
-//   </div>
-//   `
-// })
-// const del = document.querySelectorAll(".delete");
-// del.forEach((btn,index)=>{
-//   btn.addEventListener("click", (e)=>{
-//     workers.splice(index)
-//     console.log(workers)
-//   })
-// })
+//challenge  19 =======================================================================================================
+workers.forEach((worker, index) => {
+  body.innerHTML += `
+    <div class="d" data-id="${worker.id}">
+      ${worker.name}
+      <button class="delete" onclick="deleteWorker(this)">Delete</button>
+    </div>
+  `;
+});
+
+function deleteWorker(element){
+  workers.splice(workers.findIndex(w => w.id == element.parentElement.dataset.id), 1);
+  element.parentElement.outerHTML = '';
+  console.log(workers);
+}
+
 
 // console.log(workers);
-//chalenge 20 =======================================================================================================
+//challenge 20 =======================================================================================================
 // for (let i = 0; i < workers.length; i++) {
 //   const newArra =[...workers[i].name];
 // console.log(newArra)
-  
+
 // }
-// chalenge 21 =======================================================================================================
+// challenge 21 =======================================================================================================
 
 // let increaseSalary= workers.map((Worker)=>Worker.salary+Worker.salary*0.1);
 // console.log(increaseSalary)
-// chalenge 22 =======================================================================================================
+// challenge 22 =======================================================================================================
 // const Paris=[];
 // workers.reduce((sum,nextEl)=>(nextEl.city==="Paris")?Paris.push(nextEl):sum,0);
 // console.log(Paris)
@@ -220,34 +220,125 @@ const body = document.querySelector("body");
 // const Marseille=[];
 // workers.reduce((sum,nextEl)=>(nextEl.city==="Marseille")?Marseille.push(nextEl):sum,0);
 // console.log(Marseille)
-// chalenge 23 =======================================================================================================
+// challenge 23 =======================================================================================================
 // const msg = document.getElementById("workers");
 // msg.style.backgroundColor="orange"
 // workers.some(Worker=>Worker.active?msg.textContent+=" something warning":"nothing");
-// chalenge 24 =======================================================================================================
+// challenge 24 =======================================================================================================
 // workers.every(worker=>worker.salary>30000?msg.textContent="all workers earn more than $30000":"some one earn <30000")
-// chalenge 25 =======================================================================================================
+// challenge 25 =======================================================================================================
 // let clone = structuredClone(workers);
 //  clone.map(worker=>worker.salary+=15000);
 // console.log(clone)
 // console.log(workers)
-// chalenge 26 =======================================================================================================
+// challenge 26 =======================================================================================================
 // function search(){
+//   document.querySelector("#cont").innerHTML = "";
 // let val = document.querySelector(".input").value;
 
-// console.log(val)
-// let result =document.querySelector(".search")
-// result.textContent = "";
-// // workers.filter(worker=>worker.name===val?result.textContent=`${worker.name}`:result.textContent="NO worker with this name");
-// const foundWorker = workers.filter(worker=> worker.name == val);
-// console.log(foundWorker)
-// if (foundWorker) {
-//   foundWorker.forEach(Element => {
-//       result.textContent += `${Element.name}`;
-//   });
-// } 
-// else {
-//   result.textContent = "No matching worker found.";
+// workers.forEach(w => {
+//   if(w.name.includes(val) || w.role.includes(val)){
+//     document.querySelector("#cont").insertAdjacentHTML('beforeend', `<p class="search">${w.name} || ${w.role}</p>`)
+//   }
+// })
+
 // }
-// }search();
-// chalenge 27 =======================================================================================================
+// document.querySelector(".input").addEventListener("input", search);
+// challenge 27 =======================================================================================================
+
+// function select(e){
+//   const output = document.querySelector("#employeeRole")
+//  const filtred = workers.filter(w=>w.role==e.value)
+// filtred.forEach(f=>{output.innerHTML+=`<p>${f.name}</p>`})
+// }
+
+// challenge 28 =======================================================================================================
+
+// let t = document.getElementById("table-body");
+// workers.forEach((worker)=>{
+//   let row = document.createElement("tr");
+//   row.innerHTML=`
+//   <td>${worker.id}</td>
+//   <td>${worker.name}</td>
+//   <td>${worker.role}</td>
+//   <td>${worker.city}</td>
+//   <td>${worker.salary}</td>
+//   <td>${worker.active}</td>
+//   <td>${worker.hireDate}</td>
+//   `;
+//   t.appendChild(row);
+// })
+//challenge 29 =======================================================================================================
+// const header = document.querySelector("tr");
+// const sortBy = [header.children[0], header.children[2]];
+// sortBy.forEach((header) => {
+//   header.addEventListener("click", (e) => {
+//     if (header.textContent == "Name") {
+//      const sorted= workers.sort((a, b) => a.name > b.name ? 1 : -1);
+//       if(sorted)
+//         sortTable();
+
+//     } else {
+//       workers.sort((a,b)=>a.salary-b.salary)
+//       sortTable();
+//     }
+//   })
+// })
+// function sortTable() {
+//       let t = document.getElementById("table-body");
+//       t.innerHTML="";
+//   workers.forEach(worker => {
+
+//     let row = document.createElement("tr");
+//     row.innerHTML = `
+//             <td>${worker.name}</td>
+//             <td>${worker.role}</td>
+//             <td>${worker.salary}</td>
+//   `;
+//     t.appendChild(row);
+//   })
+// }sortTable();
+//challenge 30 =======================================================================================================
+// const newArray = [{ id: 7, name: 'Frank Hardy', role: 'Manager', city: 'Marseille', salary: 62000, active: true, hireDate: '2020-03-05' }
+//   ,{ id: 8, name: 'Grace Wilson', role: 'Manager', city: 'Marseille', salary: 62000, active: true, hireDate: '2020-03-05' }];
+//  const concated = workers.concat(newArray);//create New Array
+//   console.log(concated);
+// // challenge 31 =======================================================================================================
+// localStorage.setItem("workers", JSON.stringify(workers));
+// challenge 32 =======================================================================================================
+// let worker = JSON.parse(localStorage.getItem("workers"))
+// console.log(worker)
+//challenge 33 
+// const bd = document.body;
+// workers.reduce((acc,N)=>bd.innerHTML+=`<p>${N.name}-${N.role}</p>`,0)
+// challenge 34 =======================================================================================================
+
+// Array destructuring allows extracting elements from an array and assigning them to variables based on their position.
+// workers.forEach(worker=>{
+//   let {name, salary, role} = worker;
+//   body.innerHTML += `<p>${name}-${salary}-${role}</p>`
+// })
+
+// challenge 35 =======================================================================================================
+
+// Object.freeze(workers[0]);
+// workers[0].name="laarif";
+// console.log(workers[0]);
+
+//challenge 36 =======================================================================================================
+
+// let arr = new Set(workers.map(w=>w.city));
+// console.log(arr)
+
+// challenge 37 =======================================================================================================
+
+// let ar = workers.filter(w=>w.hireDate > '2024-01-01');
+// console.log(ar)
+
+// challenge 38 =======================================================================================================
+
+
+// challenge 39 =======================================================================================================
+//  let ar = workers.toSpliced(4, 1);
+//  console.log(ar)
+//  console.log(workers)

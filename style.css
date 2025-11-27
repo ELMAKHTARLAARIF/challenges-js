@@ -1,4 +1,7 @@
-body{
+:root{
+    --var-color: oklch(21% .034 264.665);
+}
+body{ 
     height: 100vh;
 }
 .container{
@@ -7,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: red;
+ background-color: --var-color;
 }
 .container div{
     width: 20%;
@@ -48,4 +51,21 @@ td{
 }#submit{
     width: 30px;
     height: 30px;
+}
+.img-preview{
+    width: 100px;
+    height: 70px;
+    border-radius: 100%;
+}
+.img-preview>img{
+    width: 100%;
+}
+.search{
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}#employeeRole{
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
 }
